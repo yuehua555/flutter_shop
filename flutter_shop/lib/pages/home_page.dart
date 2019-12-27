@@ -64,8 +64,8 @@ class _HomePageState extends State<HomePage> {
     try{
       Response response;
       var data = {'name': typeText};
-      response = await Dio().get(
-        'https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/dabaojian',
+      response = await Dio().post(
+        'https://easy-mock.bookset.io/mock/5dd3b8cbbc273b7dc8149c7a/example/test',
         queryParameters: data
       );
       return response.data;
